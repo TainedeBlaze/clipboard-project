@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-image: url("../images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media (max-width: 570px) {
+    body {
+        background-image: url("../images/bg-header-mobile.png");
+    }
+}
+
+.section-container {
+    @apply mx-auto max-w-6xl my-20 px-10 text-center; 
+}
+
+@layer base{
+    h3 {
+        @apply mb-8 text-4xl md:text-5xl font-bold text-gray-800; 
+    }
+}

@@ -5,10 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Simple Tailwind Starter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
+    <title>Clipboard Website</title>
   </head>
-  <body>
-    <h1 class="text-4xl mb-4">Welcome</h1>
-    <p>Start building your Tailwind project</p>
+  <body class="bg-gray-100 p-4">
+    <section id = "hero">
+      <div class = "mx-auto max-w-6xl pt-16 mb-40 px10 text-center">
+        <img src="images/logo.svg" class="mx-auto my-16 ">
+        <h3> A History of Everything You Copy</h3>
+        <p class="mb-8 mx-auto max-w-3xl text-2xl text-gray-600">Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
+        
+        <!--Buttom Component-->
+        <div class =" flex justify-center w-full space-y-6 text-xl text-white flex-col md:flex-row md:space-y-0 md:space-x-8 ">
+            <a href="#" class="bg-teal-500 duration-300 hover:opacity-75 shadow-lg rounded-full px-8 py-4">Download for IOS </a>
+            <a href="#" class="bg-blue-500 duration-300 hover:opacity-75 shadow-lg rounded-full px-8 py-4">Download for Desktop </a>
+          </div>
+      </div>
+   </section>
+
+   <section id="snipets">
+    <div class = "section-container">
+      <h3 class="mb-8 text-4xl md:text-5xl font-bold text-gray-800">Keep track of your snippets</h3>
+      <p class="mb-8 mx-auto max-w-3xl text-2xl text-gray-600">Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
+    </div>
+   </section>
+
+   <section id="features">
+    <div class = "section-container ">
+      <div class =" flex flex-col md:flex-md md:space-x-8 md:items-center md:justify-center">
+        <div class="mb-8">
+          <img src="images/icon-blacklist.svg" class="mx-auto mb-4">
+          <h4 class="mb-4 text-2xl font-bold text-gray-800">Quick Search</h4>
+          <p class="text-xl text-gray-600">Easily search your snippets by content, category, web address, application, and more.</p>
+        </div>
+        <div class="mb-8">
+          <img src="images/icon-text.svg" class="mx-auto mb-4">
+          <h4 class="mb-4 text-2xl font-bold text-gray-800">iCloud Sync</h4>
+          <p class="text-xl text-gray-600">Instantly saves and syncs snippets across all your devices.</p>
+        </div>
+        <div class="mb-8">
+          <img src="images/icon-preview.svg" class="mx-auto mb-4">
+          <h4 class="mb-4 text-2xl font-bold text-gray-800">Complete History</h4>
+          <p class="text-xl text-gray-600">Retrieve any snippets from the first moment you started using the app.</p>
+        </div>
+
+    </div>
+
+   </section>
   </body>
 </html>
